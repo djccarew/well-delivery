@@ -1,0 +1,1241 @@
+{
+  "id": "osdu:master-data--BHARun:0f808d41-009b-48a7-a791-06fe0a1a1d33",
+  "kind": "osdu-test:well-delivery:bharun:1.0.0",
+  "acl": {
+    "owners": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ],
+    "viewers": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-test-public-usa-dataset-x"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellboreID": "namespace:master-data--Wellbore:910a7be4-b288-4fb6-a9f8-86c37d07f056:1621376587950",
+    "Name": "Run",
+    "TubularID": "namespace:work-product-component--TubularAssembly:unknown:",
+    "StatusBhaID": "namespace:reference-data--BhaStatus:final:",
+    "StringRunNumber": 0,
+    "TripReasonID": "namespace:reference-data--ReasonTripType:none:",
+    "RunParameterPlans": [
+      {
+        "RunStartHoleMeasuredDepth": 2684.9832,
+        "RunEndtHoleMeasuredDepth": 2812.3896,
+        "OperationParameterPlan": {
+          "RealizationStrategy": "linearInterpolation",
+          "TorqueOnBottomGroup": {
+            "MaximumTorqueOnBottom": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 2684.9832,
+                  "Value": 6779.089742,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 6779.089742,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 2812.3896,
+                  "Value": 6779.089742,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 6779.089742,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:"
+                    }
+                  ]
+                }
+              ]
+            },
+            "MinimumTorqueOnBottom": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 2684.9832,
+                  "Value": 0.0,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 2812.3896,
+                  "Value": 0.0,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "RPMGroup": {
+            "MaximumRPM": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 1557.528,
+                  "Value": 8.37758,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 8.37758,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1728.5208,
+                  "Value": 8.37758,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 8.37758,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 13.613568,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1728.5208,
+                  "Value": 13.613568,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 8.37758,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 13.613568,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1863.2424,
+                  "Value": 13.613568,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 13.613568,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1863.2424,
+                  "Value": 12.566371,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 13.613568,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1933.3464,
+                  "Value": 12.566371,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 14.660766,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Directional Tools"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1933.3464,
+                  "Value": 14.660766,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 14.660766,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Directional Tools"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 2699.3088,
+                  "Value": 14.660766,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 14.660766,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Directional Tools"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 15.184364,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Directional Tools"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 2699.3088,
+                  "Value": 15.184364,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 14.660766,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Directional Tools"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 15.184364,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Directional Tools"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3101.9496,
+                  "Value": 15.184364,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 13.613568,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 15.184364,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Directional Tools"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3101.9496,
+                  "Value": 13.613568,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 13.613568,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 15.184364,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Directional Tools"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3268.0656,
+                  "Value": 13.613568,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 13.613568,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 14.660766,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Directional Tools"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3268.0656,
+                  "Value": 14.660766,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 13.613568,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 14.660766,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Directional Tools"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3322.9296,
+                  "Value": 14.660766,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 14.660766,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Directional Tools"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3322.9296,
+                  "Value": 12.566371,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 14.660766,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Directional Tools"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3343.0464,
+                  "Value": 12.566371,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 11.519173,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3343.0464,
+                  "Value": 11.519173,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 11.519173,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3474.1104,
+                  "Value": 11.519173,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 11.519173,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                }
+              ]
+            },
+            "MinimumRPM": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 1557.528,
+                  "Value": 7.330383,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 7.330383,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1728.5208,
+                  "Value": 7.330383,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 7.330383,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 10.471976,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1728.5208,
+                  "Value": 10.471976,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 7.330383,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 10.471976,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1863.2424,
+                  "Value": 10.471976,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 10.471976,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 11.519173,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1863.2424,
+                  "Value": 11.519173,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 10.471976,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 11.519173,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1933.3464,
+                  "Value": 11.519173,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 11.519173,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1933.3464,
+                  "Value": 12.566371,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 11.519173,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3101.9496,
+                  "Value": 12.566371,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 11.519173,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3268.0656,
+                  "Value": 12.566371,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 11.519173,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3322.9296,
+                  "Value": 12.566371,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 10.471976,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3322.9296,
+                  "Value": 10.471976,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 10.471976,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3343.0464,
+                  "Value": 10.471976,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 9.424778,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 10.471976,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3343.0464,
+                  "Value": 9.424778,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 9.424778,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 10.471976,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3474.1104,
+                  "Value": 9.424778,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 9.424778,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                }
+              ]
+            },
+            "RecommendedRPM": {
+              "Point": []
+            }
+          },
+          "ROPGroup": {
+            "MaximumROP": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 1557.528,
+                  "Value": 0.008467,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.008467,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                      "Description": "ECD"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3474.1104,
+                  "Value": 0.008467,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.008467,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                      "Description": "ECD"
+                    }
+                  ]
+                }
+              ]
+            },
+            "MinimumROP": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 1557.528,
+                  "Value": 0.0,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3474.1104,
+                  "Value": 0.0,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                }
+              ]
+            },
+            "RecommendedROP": {
+              "Point": []
+            }
+          },
+          "WOBGroup": {
+            "MaximumWOB": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 1557.528,
+                  "Value": 66723.324229,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 66723.324229,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Hole Cleaning"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1728.5208,
+                  "Value": 66723.324229,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 66723.324229,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Hole Cleaning"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 111205.540382,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Hole cleaning"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1728.5208,
+                  "Value": 111205.540382,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 66723.324229,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Hole Cleaning"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 111205.540382,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Hole cleaning"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1863.2424,
+                  "Value": 111205.540382,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 111205.540382,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Hole cleaning"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 137894.870073,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1863.2424,
+                  "Value": 137894.870073,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 111205.540382,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Hole cleaning"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 137894.870073,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 2699.3088,
+                  "Value": 137894.870073,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 137894.870073,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 155687.756534,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3101.9496,
+                  "Value": 137894.870073,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 137894.870073,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 155687.756534,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3268.0656,
+                  "Value": 137894.870073,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 137894.870073,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 177928.86461,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Bit Design"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3268.0656,
+                  "Value": 177928.86461,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 137894.870073,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 177928.86461,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Bit Design"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3474.1104,
+                  "Value": 177928.86461,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 177928.86461,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Bit Design"
+                    }
+                  ]
+                }
+              ]
+            },
+            "MinimumWOB": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 1557.528,
+                  "Value": 0.0,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1863.2424,
+                  "Value": 0.0,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 26689.329692,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1863.2424,
+                  "Value": 26689.329692,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 26689.329692,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1933.3464,
+                  "Value": 26689.329692,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 26689.329692,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 97860.875536,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 1933.3464,
+                  "Value": 97860.875536,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 26689.329692,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 97860.875536,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3101.9496,
+                  "Value": 97860.875536,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 66723.324229,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 97860.875536,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3101.9496,
+                  "Value": 66723.324229,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 66723.324229,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 97860.875536,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3268.0656,
+                  "Value": 66723.324229,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 66723.324229,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 137894.870073,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3268.0656,
+                  "Value": 137894.870073,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 66723.324229,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 137894.870073,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 3474.1104,
+                  "Value": 137894.870073,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 137894.870073,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Roadmap"
+                    }
+                  ]
+                }
+              ]
+            },
+            "RecommendedWOB": {
+              "Point": []
+            }
+          },
+          "FlowratePumpGroup": {
+            "MaximumFlowratePump": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 2684.9832,
+                  "Value": 0.050472,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.050472,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 2812.3896,
+                  "Value": 0.050472,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.050472,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:"
+                    }
+                  ]
+                }
+              ]
+            },
+            "MinimumFlowratePump": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 2684.9832,
+                  "Value": 0.031545,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.031545,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 2812.3896,
+                  "Value": 0.031545,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.031545,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:"
+                    }
+                  ]
+                }
+              ]
+            },
+            "RecommendedFlowratePump": {
+              "Point": []
+            }
+          }
+        }
+      }
+    ],
+    "WellboreSegmentID": "namespace:master-data--WellboreSegment:e2a2d06c-6723-41db-837f-e24ceacd26d6:1621376593047"
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "",
+      "propertyNames": [
+        "RunStartHoleMeasuredDepth",
+        "RunEndtHoleMeasuredDepth",
+        "ObservationMeasuredDepth"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "J",
+      "persistableReference": "",
+      "propertyNames": [
+        "Value"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "rad/s",
+      "persistableReference": "",
+      "propertyNames": [
+        "Value"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m/s",
+      "persistableReference": "",
+      "propertyNames": [
+        "Value"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "N",
+      "persistableReference": "",
+      "propertyNames": [
+        "Value"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3/s",
+      "persistableReference": "",
+      "propertyNames": [
+        "Value"
+      ]
+    }
+  ]
+}

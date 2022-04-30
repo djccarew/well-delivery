@@ -1,0 +1,26 @@
+{
+    "id": "namespace:master-data--ActivityPlan:activityplan-1",
+    "acl": {
+        "owners": ["data.test1@opendes.osdu-gcp.go3-nrg.projects.epam.com"],
+        "viewers": ["data.test1@opendes.osdu-gcp.go3-nrg.projects.epam.com"]
+    },
+    "data": {
+        "WellboreID": "namespace:master-data--Wellbore:wellbore-1:1",
+        "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:"
+    },
+    "kind": "slb:well-delivery:activityplan:3.0.0",
+    "meta": null,
+    "legal": {
+        "status": null,
+        "legaltags": ["opendes-entity-1"],
+        "otherRelevantDataCountries": ["US"]
+    },
+    "valid": true,
+    "endTime": null,
+    "version": 1,
+    "entityId": "activityplan-1",
+    "startTime": null,
+    "timeStamp": null,
+    "entityType": "activityplan",
+    "existenceKind": "planned"
+}

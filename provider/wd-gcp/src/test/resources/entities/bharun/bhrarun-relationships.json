@@ -1,0 +1,7 @@
+[{
+    "id": "wellbore-1:1",
+    "entityType": "wellbore"
+}, {
+    "id": "wellboresegment-1:1",
+    "entityType": "wellboresegment"
+}]

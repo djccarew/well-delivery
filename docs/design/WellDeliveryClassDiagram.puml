@@ -1,0 +1,100 @@
+@startuml
+
+
+package "osdu.wd.core.schema.interfaces" {
+    Interface ISchemaClient
+}
+
+
+package "osdu.wd.core.dataaccess.interfaces" {
+    Interface IEntityDBClient
+    Interface IQueryClient
+}
+
+package "OSDUCoreServiceClient"  {
+    class LegalClient
+    class EntitlementsClient
+    class StorageClient
+}
+
+package "osdu.wd.core.schema.impl" {
+    class MongoSchemaClient
+    ''MongoSchemaClient--|>ISchemaClient
+    ISchemaClient<|--MongoSchemaClient
+}
+
+
+package "osdu.wd.core.dataaccess.impl" {
+    class MongoEntityClient
+    'class CosmosEntityClient
+    class MongodbFacade
+    class MongoQueryClient
+
+    IEntityDBClient<|--MongoEntityClient
+    'IEntityDBClient<|--CosmosEntityClient
+    MongodbFacade<..MongoEntityClient
+    IQueryClient<|--MongoQueryClient
+    MongodbFacade<..MongoQueryClient
+}
+
+package "osdu.wd.core.services"{
+    class EntityStorageService
+    class EntityValidateService
+    class ActivityPlanQueryService
+    class BHARunQueryService
+    class DrillingProgramQueryService
+    class SectionQueryService
+    class TrajectoryQueryService
+
+    EntityStorageService-->IEntityDBClient
+    EntityStorageService-->ISchemaClient
+    EntityStorageService-->StorageClient
+    EntityStorageService-->EntityValidateService
+
+    EntityValidateService->LegalClient
+    EntityValidateService->EntitlementsClient
+
+    ActivityPlanQueryService-->IQueryClient
+    BHARunQueryService-->IQueryClient
+    DrillingProgramQueryService-->IQueryClient
+    DrillingProgramQueryService-->IEntityDBClient
+    SectionQueryService-->IQueryClient
+    TrajectoryQueryService-->IQueryClient
+}
+
+
+package "osdu.wd.core.schema.services"{
+    class SchemaStorageService
+
+    SchemaStorageService-->ISchemaClient
+}
+
+
+
+package "osdu.wd.core.api"{
+    class EntityApi
+    class DrillingProgramApi
+    class ActivityPlanApi
+    class BHARunApi
+    class HealthCheckApi
+    class SectionApi
+    class TrajectoryApi
+
+    EntityApi-->EntityStorageService
+    ActivityPlanApi-->ActivityPlanQueryService
+    BHARunApi-->BHARunQueryService
+    DrillingProgramApi-->DrillingProgramQueryService
+    SectionApi-->SectionQueryService
+    TrajectoryApi-->TrajectoryQueryService
+}
+
+package "osdu.wd.core.schema.api"{
+    class SchemaApi
+
+    SchemaApi-->SchemaStorageService
+
+}
+
+
+
+@enduml

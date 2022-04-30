@@ -1,0 +1,64 @@
+{
+  "id": "osdu:master-data--WellActivityProgram:522b62e3-69cb-4111-9976-df04a0c275d6",
+  "kind": "osdu-test:well-delivery:wellactivityprogram:1.0.0",
+  "acl": {
+    "owners": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ],
+    "viewers": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-test-public-usa-dataset-x"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "RigID": "namespace:master-data--Rig:0a5b8f0d-c539-4667-915d-f30787800cb8:1621376589846",
+    "Phases": [
+      {
+        "TypeID": "namespace:reference-data--WellActivityPhaseType:Primary:",
+        "WellActivityplanID": "namespace:master-data--ActivityPlan:bd932928-ff2c-4c8c-9f0d-b359325b77a7:1621376621036",
+        "WellboreID": "namespace:master-data--Wellbore:910a7be4-b288-4fb6-a9f8-86c37d07f056:1621376587950",
+        "RiskIDs": [
+          {
+            "RisksID": "namespace:master-data--Risk:05b0eed3-0859-4c9e-bbb3-a07e2ca88d78:1621376614367"
+          },
+          {
+            "RisksID": "namespace:master-data--Risk:1fdd2be0-b5ee-47e2-bf89-bddd71479345:1621376615094"
+          },
+          {
+            "RisksID": "namespace:master-data--Risk:7b4fe9a4-23e7-40c9-b0df-02834373ab70:1621376615660"
+          },
+          {
+            "RisksID": "namespace:master-data--Risk:873d8fdd-2453-4aa8-abf2-f9899b93cb21:1621376617304"
+          },
+          {
+            "RisksID": "namespace:master-data--Risk:6347389d-407d-44d1-b46c-dde0a1afb4ec:1621376617974"
+          },
+          {
+            "RisksID": "namespace:master-data--Risk:d2a1b21c-7531-4b21-9d71-a7962e713449:1621376618788"
+          },
+          {
+            "RisksID": "namespace:master-data--Risk:662ba030-032f-4db9-a621-a40da5204a59:1621376619652"
+          },
+          {
+            "RisksID": "namespace:master-data--Risk:8c40d6b1-a45d-4bdc-aa31-b4eb76282bf0:1621376620450"
+          }
+        ],
+        "BHARunIDs": [
+          "namespace:master-data--BHARun:e920c7a2-bd6d-4325-a4d7-924c7fd00669:1621376592150",
+          "namespace:master-data--BHARun:9442349e-87c7-4808-8c98-0f7c7e309875:1621376594723",
+          "namespace:master-data--BHARun:0f808d41-009b-48a7-a791-06fe0a1a1d33:1621376596281"
+        ],
+        "WellboreArchitectureID": "namespace:master-data--WellboreArchitecture:wa_910a7be4-b288-4fb6-a9f8-86c37d07f056:1621376597174"
+      }
+    ],
+    "TypeID": "namespace:reference-data--WellActivityProgramType:Primary:"
+  }
+}

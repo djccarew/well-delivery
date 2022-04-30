@@ -1,0 +1,28 @@
+{
+    "id": "namespace:master-data--BHARun:bharun-1",
+    "acl": {
+        "owners": ["data.test1@opendes.osdu-gcp.go3-nrg.projects.epam.com"],
+        "viewers": ["data.test1@opendes.osdu-gcp.go3-nrg.projects.epam.com"]
+    },
+    "data": {
+        "Name": "Demo BDArun name",
+        "WellboreID": "namespace:master-data--Wellbore:wellbore-1:1",
+        "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+        "WellboreSegmentID": "namespace:master-data--WellboreSegment:wellboresegment-1629291963979:1629292036277"
+    },
+    "kind": "slb:well-delivery:bharun:3.0.0",
+    "meta": null,
+    "legal": {
+        "status": null,
+        "legaltags": ["opendes-entity-1"],
+        "otherRelevantDataCountries": ["US"]
+    },
+    "valid": true,
+    "endTime": null,
+    "version": 1,
+    "entityId": "bharun-1",
+    "startTime": null,
+    "timeStamp": null,
+    "entityType": "bharun",
+    "existenceKind": "planned"
+}

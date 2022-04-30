@@ -1,0 +1,29 @@
+{
+  "id": "osdu:master-data--WellboreArchitecture:wa_910a7be4-b288-4fb6-a9f8-86c37d07f056",
+  "kind": "osdu-test:well-delivery:wellborearchitecture:1.0.0",
+  "acl": {
+    "owners": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ],
+    "viewers": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-test-public-usa-dataset-x"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellboreID": "namespace:master-data--Wellbore:910a7be4-b288-4fb6-a9f8-86c37d07f056:1621376587950",
+    "WellboreSegmentIDs": [
+      "namespace:master-data--WellboreSegment:88d8f53b-ebaf-4387-8323-f37c6b6d9135:1621376590691",
+      "namespace:master-data--WellboreSegment:e2a2d06c-6723-41db-837f-e24ceacd26d6:1621376593047"
+    ],
+    "InstalledTubulars": []
+  }
+}

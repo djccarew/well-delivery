@@ -1,0 +1,80 @@
+{
+  "id": "osdu:master-data--WellPlanningWell:wp_well_b3528018-860e-4766-a940-0adbcca8f63b",
+  "kind": "osdu-test:well-delivery:wellplanningwell:1.0.0",
+  "acl": {
+    "owners": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ],
+    "viewers": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-test-public-usa-dataset-x"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "FacilityName": "Blueberry 0618",
+    "WellID": "namespace:master-data--Well:b3528018-860e-4766-a940-0adbcca8f63b:1621376575600",
+    "TimeZone": "+00:00",
+    "ExtensionProperties": {
+      "Name": "Blueberry 0618",
+      "NameLegal": "Blueberry 0618",
+      "NumGovt": "1231",
+      "Field": "Facility",
+      "Country": "USA",
+      "Region": "NAM",
+      "TimeZone": "+00:00",
+      "Operator": "Maestro",
+      "StatusWell": "namespace:reference-data--WellStatus:abandoned:",
+      "PurposeWell": "namespace:reference-data--WellPurpose:unknown:",
+      "FluidWell": "namespace:reference-data--WellFluid:oil:",
+      "DirectionWell": "namespace:reference-data--WellDirection:huffnpuff:",
+      "GroundElevation": 0.0,
+      "WellDatum": [
+        {
+          "VerticalMeasurementID": "KB",
+          "VerticalMeasurement": 0.0,
+          "VerticalMeasurementPathID": "namespace:reference-data--VerticalMeasurementPath:Elevation:",
+          "VerticalMeasurementDescription": "RKB"
+        },
+        {
+          "VerticalMeasurementID": "SL",
+          "VerticalMeasurementDescription": "Mean Sea Level"
+        },
+        {
+          "VerticalMeasurementID": "GL",
+          "VerticalMeasurement": 0.0,
+          "VerticalMeasurementPathID": "namespace:reference-data--VerticalMeasurementPath:Elevation:",
+          "VerticalMeasurementDescription": "Ground Level"
+        }
+      ],
+      "WellLocation": [
+        {
+          "Coordinates": [
+            {
+              "y": 29.7944005,
+              "x": -95.781784
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "",
+      "propertyNames": [
+        "GroundElevation",
+        "VerticalMeasurement"
+      ]
+    }
+  ]
+}

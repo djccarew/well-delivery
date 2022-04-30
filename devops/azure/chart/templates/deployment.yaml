@@ -1,0 +1,80 @@
+#  Copyright © Microsoft Corporation
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  {{ .Release.Name }}
+  namespace: osdu
+spec:
+  replicas: {{ .Values.global.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}
+        aadpodidbinding: osdu-identity
+    spec:
+      volumes:
+      - name: azure-keyvault
+        csi:
+          driver: secrets-store.csi.k8s.io
+          readOnly: true
+          volumeAttributes:
+            secretProviderClass: azure-keyvault
+      containers:
+      - name: {{ .Chart.Name }}
+        image: {{ .Values.image.repository }}/{{ .Chart.Name }}-{{ .Values.image.branch }}:{{ .Values.image.tag | default .Chart.AppVersion }}
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+        readinessProbe:
+          httpGet:
+            path: /api/well-delivery/_ah/warmup
+            port: 80
+        env:
+          - name: server.servlet.contextPath
+            value: /api/well-delivery/
+          - name: server_port
+            value: "80"
+          - name: entitlements_service_endpoint
+            value: http://entitlements/api/entitlements/v2
+          - name: entitlements_service_api_key
+            value: "OBSOLETE"
+          - name: legal_service_endpoint
+            value: http://legal/api/legal/v1
+          - name: storage_service_endpoint
+            value: http://storage/api/storage/v2
+          - name: schema_service_endpoint
+            value: http://schema-service/api/schema-service/v1
+          - name: partition_service_endpoint
+            value: http://partition/api/partition/v1
+          - name: KEYVAULT_URI
+            valueFrom:
+              configMapKeyRef:
+                name: osdu-svc-properties
+                key: ENV_KEYVAULT
+          - name: aad_client_id
+            valueFrom:
+              secretKeyRef:
+                name: active-directory
+                key: application-appid
+          - name: azure_activedirectory_session_stateless
+            value: "true"
+          - name: azure_activedirectory_AppIdUri
+            value: "api://$(aad_client_id)"
+          - name: azure_istioauth_enabled
+            value: "true"

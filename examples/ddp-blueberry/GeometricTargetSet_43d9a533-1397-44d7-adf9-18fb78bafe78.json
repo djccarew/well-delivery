@@ -1,0 +1,34 @@
+{
+  "id": "osdu:master-data--GeometricTargetSet:43d9a533-1397-44d7-adf9-18fb78bafe78",
+  "kind": "osdu-test:well-delivery:geometrictargetset:1.0.0",
+  "acl": {
+    "owners": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ],
+    "viewers": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-test-public-usa-dataset-x"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellboreID": "namespace:master-data--Wellbore:910a7be4-b288-4fb6-a9f8-86c37d07f056:1621376587950",
+    "WellboreName": "Blueberry 0618",
+    "Targets": [
+      {
+        "Name": "Untitled Target",
+        "Type": "namespace:reference-data--TargetType:unknown:",
+        "Geometry": {
+          "Shape": "namespace:reference-data--TargetShape:Point:"
+        }
+      }
+    ]
+  }
+}

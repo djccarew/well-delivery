@@ -1,0 +1,62 @@
+{
+  "id": "osdu:master-data--SurveyProgram:sp_478189fd-1ab0-45df-997d-262adfcfc8ed",
+  "kind": "osdu-test:well-delivery:surveyprogram:1.0.0",
+  "acl": {
+    "owners": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ],
+    "viewers": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-test-public-usa-dataset-x"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "NameWell": "Blueberry 0618",
+    "NameWellbore": "Blueberry 0618",
+    "WellboreID": "namespace:master-data--Wellbore:910a7be4-b288-4fb6-a9f8-86c37d07f056:1621376587950",
+    "SurveySections": [
+      {
+        "Sequence": 1,
+        "MeasuredDepthStart": 0.0,
+        "MeasuredDepthEnd": 712.0128000000001,
+        "SurveyCompanyID": "namespace:master-data--Organisation:Schlumberger:",
+        "SurveyToolName": "NAL_MWD_2.0_DEG",
+        "SurveyToolTypeID": "namespace:reference-data--SurveyToolType:Unknown:",
+        "IsOverwrite": false,
+        "FrequencyMx": 30.48,
+        "SurveySectionExistenceKind": "actual"
+      },
+      {
+        "Sequence": 2,
+        "MeasuredDepthStart": 712.0128000000001,
+        "MeasuredDepthEnd": 2812.3895999999995,
+        "SurveyCompanyID": "namespace:master-data--Organisation:Schlumberger:",
+        "SurveyToolName": "NAL_MWD_2.0_DEG",
+        "SurveyToolTypeID": "namespace:reference-data--SurveyToolType:Unknown:",
+        "IsOverwrite": false,
+        "FrequencyMx": 30.48,
+        "SurveySectionExistenceKind": "actual"
+      }
+    ]
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "",
+      "propertyNames": [
+        "MeasuredDepthStart",
+        "MeasuredDepthEnd",
+        "FrequencyMx"
+      ]
+    }
+  ]
+}

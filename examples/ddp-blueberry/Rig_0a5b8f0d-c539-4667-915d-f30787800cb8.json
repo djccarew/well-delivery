@@ -1,0 +1,64 @@
+{
+  "id": "osdu:master-data--Rig:0a5b8f0d-c539-4667-915d-f30787800cb8",
+  "kind": "osdu-test:well-delivery:rig:1.0.0",
+  "acl": {
+    "owners": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ],
+    "viewers": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-test-public-usa-dataset-x"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "TypeRig": "namespace:reference-data--RigType:land:",
+    "ExtensionProperties": {
+      "YearEntService": 0,
+      "Name": "Untitled Rig",
+      "IsOffshore": false,
+      "NumDerricks": 0,
+      "TypeDerrick": "namespace:reference-data--TypeDerrick:unknown:",
+      "RatingHkld": 5337865.938312599,
+      "WTBlock": 222411.08076302498,
+      "NumBlockLines": 0,
+      "TypeDrawWorks": "namespace:reference-data--TypeDrawWorks:mechanical:",
+      "RotSystem": "namespace:reference-data--RotSystem:coiledtubing:",
+      "RatingTqRotSys": 24404.7230699652,
+      "NumBunks": 0,
+      "BunksPerRoom": 0,
+      "NumCranes": 0,
+      "NumAnch": 0,
+      "NumGuideTens": 0,
+      "NumRiserTens": 0,
+      "NumThrusters": 0,
+      "Azimuthing": false
+    }
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "N",
+      "persistableReference": "",
+      "propertyNames": [
+        "RatingHkld",
+        "WTBlock"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "J",
+      "persistableReference": "",
+      "propertyNames": [
+        "RatingTqRotSys"
+      ]
+    }
+  ]
+}

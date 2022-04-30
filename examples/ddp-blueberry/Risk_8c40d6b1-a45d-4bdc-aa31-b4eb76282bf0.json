@@ -1,0 +1,33 @@
+{
+  "id": "osdu:master-data--Risk:8c40d6b1-a45d-4bdc-aa31-b4eb76282bf0",
+  "kind": "osdu-test:well-delivery:risk:1.0.0",
+  "acl": {
+    "owners": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ],
+    "viewers": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-test-public-usa-dataset-x"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "Mitigations": [
+      {
+        "Name": "Unknown",
+        "Description": " Set a cement plug.",
+        "Status": "namespace:reference-data--RiskResponseStatus:Unknown:",
+        "Responsibles": []
+      }
+    ],
+    "Name": "Drilling fluid breaching the surface",
+    "Summary": "Perdidas de circulacio"
+  }
+}

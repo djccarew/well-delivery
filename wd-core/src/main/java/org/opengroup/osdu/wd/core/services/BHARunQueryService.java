@@ -1,0 +1,58 @@
+// Copyright 2020 Schlumberger
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+package org.opengroup.osdu.wd.core.services;
+
+import org.opengroup.osdu.core.client.model.http.AppException;
+import org.opengroup.osdu.wd.core.dataaccess.interfaces.IQueryClient;
+
+import org.apache.http.HttpStatus;
+import org.opengroup.osdu.wd.core.models.EntityDtoReturn;
+import org.opengroup.osdu.wd.core.models.HttpErrorStrings;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class BHARunQueryService {
+    @Autowired
+    private IQueryClient queryClient;
+    @Autowired
+    private EntityValidateService validate;
+
+    public List<EntityDtoReturn> getBHARunsBySection(String existenceKind, String segmentId) {
+        List<EntityDtoReturn> res = queryClient.getBHARunsBySection(existenceKind, segmentId);
+        if (res.isEmpty())
+            throw new AppException(HttpStatus.SC_NOT_FOUND, HttpErrorStrings.NOT_FOUND, "Not found " + existenceKind + " BHA runs with wellbore segment id :" + segmentId);
+        validate.ValidateEntityReturnList(res);
+        return res;
+    }
+
+    public List<EntityDtoReturn> getBHARunsByWells(String existenceKind, List<String> wellIds) {
+        List<EntityDtoReturn> res = queryClient.getBHARunsByWells(existenceKind, wellIds);
+        if (res.isEmpty())
+            throw new AppException(HttpStatus.SC_NOT_FOUND, HttpErrorStrings.NOT_FOUND, "Not found " + existenceKind + " BHA runs with well ids: " + String.join(",", wellIds));
+        validate.ValidateEntityReturnList(res);
+        return res;
+    }
+
+    public List<EntityDtoReturn> getBHARunsByWellbore(String existenceKind, String wellboreId) {
+        List<EntityDtoReturn> res = queryClient.getBHARunsByWellbore(existenceKind, wellboreId);
+        if (res.isEmpty())
+            throw new AppException(HttpStatus.SC_NOT_FOUND, HttpErrorStrings.NOT_FOUND, "Not found " + existenceKind + " BHA runs with wellbore id: " + wellboreId);
+        validate.ValidateEntityReturnList(res);
+        return res;
+    }
+}

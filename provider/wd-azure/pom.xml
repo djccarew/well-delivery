@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright 2020 Schlumberger
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.opengroup.osdu.wd</groupId>
+    <artifactId>well-delivery-service-azure</artifactId>
+    <version>0.12.2</version>
+    <name>well-delivery-service-azure</name>
+    <packaging>jar</packaging>
+    <description>well delivery service in azure</description>
+
+    <parent>
+        <groupId>org.opengroup.osdu.wd</groupId>
+        <artifactId>well-delivery-service</artifactId>
+        <version>0.12.2</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+
+    <properties>
+        <azure.version>2.3.5</azure.version>
+        <azure.appservice.subscription>c9bbc81c-5f27-42c4-a23b-11a4ff7b043e</azure.appservice.subscription>
+        <azure.appservice.resourcegroup>wcds-osdu</azure.appservice.resourcegroup>
+        <azure.appservice.plan>wd-osdu-dev</azure.appservice.plan>
+        <azure.appservice.appname>wd-osdu-dev</azure.appservice.appname>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.opengroup.osdu</groupId>
+            <artifactId>os-core-service-client</artifactId>
+            <version>0.0.13</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.opengroup.osdu.wd</groupId>
+            <artifactId>well-delivery-core</artifactId>
+            <version>0.12.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+
+        <!-- Azure dependencies -->
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-spring-boot</artifactId>
+            <version>${azure.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-identity</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-security-keyvault-secrets</artifactId>
+            <version>4.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-cosmos</artifactId>
+            <version>4.0.0-preview.1</version>
+        </dependency>
+
+        <!-- springframework dependencies -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+             <exclusions>
+                <exclusion>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-to-slf4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-api</artifactId>
+                </exclusion>
+            </exclusions>            
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>spring-boot</classifier>
+                            <mainClass>org.opengroup.osdu.wd.azure.AzureApplication</mainClass>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>azure-webapp-maven-plugin</artifactId>
+                <version>1.8.0</version>
+                <configuration>
+                    <schemaVersion>V2</schemaVersion>
+                    <subscriptionId>${azure.appservice.subscription}</subscriptionId>
+                    <resourceGroup>${azure.appservice.resourcegroup}</resourceGroup>
+                    <appServicePlanName>${azure.appservice.plan}</appServicePlanName>
+                    <appName>${azure.appservice.appname}</appName>
+                    <runtime>
+                        <os>linux</os>
+                        <javaVersion>java11</javaVersion>
+                        <webContainer>java11</webContainer>
+                    </runtime>
+                    <appSettings>
+                        <property>
+                            <name>JAVA_OPTS</name>
+                            <value>-Dserver.port=80</value>
+                        </property>
+                    </appSettings>
+                    <deployment>
+                        <resources>
+                            <resource>
+                                <directory>${project.basedir}/target</directory>
+                                <includes>
+                                    <include>*spring-boot.jar</include>
+                                </includes>
+                            </resource>
+                        </resources>
+                    </deployment>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

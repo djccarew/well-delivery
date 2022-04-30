@@ -1,0 +1,26 @@
+{
+    "id": "namespace:master-data--Well:well-1",
+    "acl": {
+        "owners": ["data.test1@opendes.osdu-gcp.go3-nrg.projects.epam.com"],
+        "viewers": ["data.test1@opendes.osdu-gcp.go3-nrg.projects.epam.com"]
+    },
+    "data": {
+        "FacilityName": "Well-Name",
+        "ExistenceKind": "namespace:reference-data--ExistenceKind:actual:"
+    },
+    "kind": "slb:well-delivery:well:3.0.0",
+    "meta": null,
+    "legal": {
+        "status": null,
+        "legaltags": ["opendes-entity-1"],
+        "otherRelevantDataCountries": ["US"]
+    },
+    "valid": true,
+    "endTime": null,
+    "version": 1,
+    "entityId": "well-1",
+    "startTime": null,
+    "timeStamp": null,
+    "entityType": "well",
+    "existenceKind": "actual"
+}

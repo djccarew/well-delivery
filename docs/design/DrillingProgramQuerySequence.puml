@@ -1,0 +1,15 @@
+@startuml
+actor WebClient
+
+WebClient -> DrillingProgramApi : reference_tree by well
+activate DrillingProgramApi
+DrillingProgramApi -> DrillingProgramQueryService : getLatestDrillingProgramRefTree
+DrillingProgramQueryService -> MongoQueryClient : getLatestDrillingProgramRefTree
+MongoQueryClient -> MongodbFacade : getLatestEntityVersionByRelatedId
+MongodbFacade --> MongoQueryClient : Json document response
+MongoQueryClient -> MongoQueryClient : buildDocumentRef
+MongoQueryClient --> DrillingProgramQueryService : Ref tree document
+DrillingProgramQueryService --> DrillingProgramApi : Ref tree document
+DrillingProgramApi --> WebClient : reference_tree response
+
+@enduml

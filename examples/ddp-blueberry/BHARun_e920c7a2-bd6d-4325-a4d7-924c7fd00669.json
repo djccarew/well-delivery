@@ -1,0 +1,762 @@
+{
+  "id": "osdu:master-data--BHARun:e920c7a2-bd6d-4325-a4d7-924c7fd00669",
+  "kind": "osdu-test:well-delivery:bharun:1.0.0",
+  "acl": {
+    "owners": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ],
+    "viewers": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-test-public-usa-dataset-x"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellboreID": "namespace:master-data--Wellbore:910a7be4-b288-4fb6-a9f8-86c37d07f056:1621376587950",
+    "Name": "Run",
+    "TubularID": "namespace:work-product-component--TubularAssembly:unknown:",
+    "StatusBhaID": "namespace:reference-data--BhaStatus:final:",
+    "StringRunNumber": 0,
+    "TripReasonID": "namespace:reference-data--ReasonTripType:none:",
+    "RunParameterPlans": [
+      {
+        "RunStartHoleMeasuredDepth": 0.0,
+        "RunEndtHoleMeasuredDepth": 712.0128000000001,
+        "OperationParameterPlan": {
+          "RealizationStrategy": "linearInterpolation",
+          "TorqueOnBottomGroup": {
+            "MaximumTorqueOnBottom": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 0.0,
+                  "Value": 6779.089742,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 6779.089742,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 712.0128,
+                  "Value": 6779.089742,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 6779.089742,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:"
+                    }
+                  ]
+                }
+              ]
+            },
+            "MinimumTorqueOnBottom": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 0.0,
+                  "Value": 0.0,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 712.0128,
+                  "Value": 0.0,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "RPMGroup": {
+            "MaximumRPM": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 0.0,
+                  "Value": 12.566371,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 236.276873,
+                  "Value": 12.566371,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 10.786135,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "xxxxxxxxxxxx"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 236.276873,
+                  "Value": 10.786135,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 10.786135,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "xxxxxxxxxxxx"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 530.628534,
+                  "Value": 10.786135,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 10.786135,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "xxxxxxxxxxxx"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 530.628534,
+                  "Value": 12.566371,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 10.786135,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "xxxxxxxxxxxx"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 712.0128,
+                  "Value": 12.566371,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.566371,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:"
+                    }
+                  ]
+                }
+              ]
+            },
+            "MinimumRPM": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 0.0,
+                  "Value": 4.18879,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 4.18879,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 234.685783,
+                  "Value": 4.18879,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 4.18879,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 8.58702,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "ppppppp"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 234.685783,
+                  "Value": 8.58702,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 4.18879,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 8.58702,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "ppppppp"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 463.007206,
+                  "Value": 8.58702,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 4.18879,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 8.58702,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "ppppppp"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 463.007206,
+                  "Value": 4.18879,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 4.18879,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 8.58702,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "ppppppp"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 712.0128,
+                  "Value": 4.18879,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 4.18879,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:"
+                    }
+                  ]
+                }
+              ]
+            },
+            "RecommendedRPM": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 105.807489,
+                  "Value": 6.89056,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 6.89056,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "due top drive limitations"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 158.31346,
+                  "Value": 6.89056,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 6.89056,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2fs:",
+                      "Description": "due top drive limitations"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "ROPGroup": {
+            "MaximumROP": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 0.0,
+                  "Value": 0.001693,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.001693,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 83.532228,
+                  "Value": 0.001693,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.001397,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                      "Description": "Bit limitation2"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.001693,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 83.532228,
+                  "Value": 0.001397,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.001397,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                      "Description": "Bit limitation2"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.001693,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 194.908532,
+                  "Value": 0.001397,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.001397,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                      "Description": "Bit limitation2"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.001693,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 194.908532,
+                  "Value": 0.001693,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.001397,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                      "Description": "Bit limitation2"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.001693,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 712.0128,
+                  "Value": 0.001693,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.001693,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:"
+                    }
+                  ]
+                }
+              ]
+            },
+            "MinimumROP": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 0.0,
+                  "Value": 0.000423,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.000423,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 84.327773,
+                  "Value": 0.000423,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.000423,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.000694,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                      "Description": "Bit limitation"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 84.327773,
+                  "Value": 0.000694,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.000423,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.000694,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                      "Description": "Bit limitation"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 186.157537,
+                  "Value": 0.000694,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.000423,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.000694,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                      "Description": "Bit limitation"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 186.157537,
+                  "Value": 0.000423,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.000423,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.000694,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                      "Description": "Bit limitation"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 712.0128,
+                  "Value": 0.000423,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.000423,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2fs:"
+                    }
+                  ]
+                }
+              ]
+            },
+            "RecommendedROP": {
+              "Point": []
+            }
+          },
+          "WOBGroup": {
+            "MaximumWOB": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 0.0,
+                  "Value": 44482.216153,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 44482.216153,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 712.0128,
+                  "Value": 44482.216153,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 44482.216153,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:"
+                    }
+                  ]
+                }
+              ]
+            },
+            "MinimumWOB": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 0.0,
+                  "Value": 22241.108076,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 22241.108076,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 712.0128,
+                  "Value": 22241.108076,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 22241.108076,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:"
+                    }
+                  ]
+                }
+              ]
+            },
+            "RecommendedWOB": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 77.167868,
+                  "Value": 36030.595084,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 36030.595084,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "shallow formation"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 202.068437,
+                  "Value": 36030.595084,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 36030.595084,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "shallow formation"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "FlowratePumpGroup": {
+            "MaximumFlowratePump": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 0.0,
+                  "Value": 0.050472,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.050472,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 712.0128,
+                  "Value": 0.050472,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.050472,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:"
+                    }
+                  ]
+                }
+              ]
+            },
+            "MinimumFlowratePump": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 0.0,
+                  "Value": 0.031545,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.031545,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 712.0128,
+                  "Value": 0.031545,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.031545,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:"
+                    }
+                  ]
+                }
+              ]
+            },
+            "RecommendedFlowratePump": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 84.327773,
+                  "Value": 0.047242,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.047242,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:",
+                      "Description": "due to mud pump limitation"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 244.232324,
+                  "Value": 0.047242,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.047242,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2fs:",
+                      "Description": "due to mud pump limitation"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "WellboreSegmentID": "namespace:master-data--WellboreSegment:88d8f53b-ebaf-4387-8323-f37c6b6d9135:1621376590691"
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "",
+      "propertyNames": [
+        "RunStartHoleMeasuredDepth",
+        "RunEndtHoleMeasuredDepth",
+        "ObservationMeasuredDepth"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "J",
+      "persistableReference": "",
+      "propertyNames": [
+        "Value"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "rad/s",
+      "persistableReference": "",
+      "propertyNames": [
+        "Value"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m/s",
+      "persistableReference": "",
+      "propertyNames": [
+        "Value"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "N",
+      "persistableReference": "",
+      "propertyNames": [
+        "Value"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3/s",
+      "persistableReference": "",
+      "propertyNames": [
+        "Value"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "osdu:master-data--Risk:6347389d-407d-44d1-b46c-dde0a1afb4ec",
+  "kind": "osdu-test:well-delivery:risk:1.0.0",
+  "acl": {
+    "owners": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ],
+    "viewers": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-test-public-usa-dataset-x"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "Mitigations": [
+      {
+        "Name": "Unknown",
+        "Description": "• Closely watch shale shakers for\ncavings\n• Ream down and pump out with drilling\npump rate\n• Do not overpull more than 10 MT prior\nto calling the WSS\n• Work tight spots before making\nconnection",
+        "Status": "namespace:reference-data--RiskResponseStatus:Unknown:",
+        "Responsibles": []
+      }
+    ],
+    "Name": "Tight hole / Cavings"
+  }
+}

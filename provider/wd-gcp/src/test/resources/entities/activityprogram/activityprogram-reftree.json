@@ -1,0 +1,21 @@
+{
+    "id": "wellactivityprogram-1",
+    "version": 1,
+    "type": "wellactivityprogram",
+    "items": [{
+        "id": "wellbore-1",
+        "version": 1,
+        "type": "wellbore",
+        "items": [{
+            "id": "well-1",
+            "version": 1,
+            "type": "well"
+        }
+        ]
+    }, {
+        "id": "activityplan-1",
+        "version": 1,
+        "type": "activityplan"
+    }
+    ]
+}

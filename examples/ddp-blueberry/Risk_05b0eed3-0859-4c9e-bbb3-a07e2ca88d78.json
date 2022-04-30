@@ -1,0 +1,33 @@
+{
+  "id": "osdu:master-data--Risk:05b0eed3-0859-4c9e-bbb3-a07e2ca88d78",
+  "kind": "osdu-test:well-delivery:risk:1.0.0",
+  "acl": {
+    "owners": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ],
+    "viewers": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-test-public-usa-dataset-x"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "Mitigations": [
+      {
+        "Name": "Unknown",
+        "Description": "• Work string up/down\ndepending on the stuck\ndirection.\n• Ensure enough weight\nabove jars to fire jars\ndownwards",
+        "Status": "namespace:reference-data--RiskResponseStatus:Unknown:",
+        "Responsibles": []
+      }
+    ],
+    "Name": "Stuck Pipe",
+    "Summary": "due to plastic movement of Marl"
+  }
+}

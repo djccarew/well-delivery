@@ -1,0 +1,28 @@
+{
+    "id": "namespace:master-data--DrillingReport:drillingreport-1",
+    "acl": {
+        "owners": ["data.test1@opendes.osdu-gcp.go3-nrg.projects.epam.com"],
+        "viewers": ["data.test1@opendes.osdu-gcp.go3-nrg.projects.epam.com"]
+    },
+    "data": {
+        "WellboreID": "namespace:master-data--Wellbore:wellbore-1:1",
+        "EndDateTime": "2010-05-10T14:09:10",
+        "ExistenceKind": "namespace:reference-data--ExistenceKind:actual:",
+        "StartDateTime": "2010-05-09T10:10:30"
+    },
+    "kind": "slb:well-delivery:drillingreport:3.0.0",
+    "meta": null,
+    "legal": {
+        "status": null,
+        "legaltags": ["opendes-entity-1"],
+        "otherRelevantDataCountries": ["US"]
+    },
+    "valid": true,
+    "endTime": "2010-05-10T14:09:10",
+    "version": 1,
+    "entityId": "drillingreport-1",
+    "startTime": "2010-05-09T10:10:30",
+    "timeStamp": null,
+    "entityType": "drillingreport",
+    "existenceKind": "actual"
+}

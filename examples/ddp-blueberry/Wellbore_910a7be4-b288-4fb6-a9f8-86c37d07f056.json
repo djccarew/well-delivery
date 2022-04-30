@@ -1,0 +1,32 @@
+{
+  "id": "osdu:master-data--Wellbore:910a7be4-b288-4fb6-a9f8-86c37d07f056",
+  "kind": "osdu-test:well-delivery:wellbore:1.0.0",
+  "acl": {
+    "owners": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ],
+    "viewers": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-test-public-usa-dataset-x"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "version": 1621376587950,
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellID": "namespace:master-data--Well:b3528018-860e-4766-a940-0adbcca8f63b:1621376575600",
+    "DefinitiveTrajectoryID": "namespace:work-product-component--WellboreTrajectory:478189fd-1ab0-45df-997d-262adfcfc8ed:1621376598066",
+    "SurveyProgramIDs": [
+      "namespace:master-data--SurveyProgram:sp_478189fd-1ab0-45df-997d-262adfcfc8ed:1621376600121"
+    ],
+    "TargetID": "namespace:master-data--GeometricTargetSet:43d9a533-1397-44d7-adf9-18fb78bafe78:1621376611419",
+    "WellboreMarkerSetID": "namespace:work-product-component--WellboreMarkerSet:a77b88c7-9233-46c1-92c8-40cd62415626:1621376599046",
+    "WellboreArchitectureID": "namespace:master-data--WellboreArchitecture:wa_910a7be4-b288-4fb6-a9f8-86c37d07f056:1621376597174"
+  }
+}

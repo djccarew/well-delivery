@@ -1,0 +1,39 @@
+@startuml
+actor WebClient
+
+WebClient -> EntityApi : Create Entity Request 
+activate EntityApi
+EntityApi -> EntityStorageService: createOrUpdateEntities
+EntityStorageService -> EntityValidateService: ValidateEntity
+
+EntityValidateService -> LegalClient: validateLegalConstraints
+participant Core.LegalService as Legal #99FF99
+LegalClient -> Legal : validateLegalTags 
+Legal --> LegalClient: validateLegalTags Response
+LegalClient -> Legal : validateLegalOtherRelevantDataCountries
+Legal --> LegalClient: validateLegalOtherRelevantDataCountries Response
+LegalClient --> EntityValidateService : validateLegalConstraints Response
+EntityValidateService -> EntitlementClient : validateAcls
+participant Core.EntitlementService as entitlement #99FF99
+EntitlementClient -> entitlement : validateAcls
+entitlement --> EntitlementClient : validateAcls Response
+EntitlementClient --> EntityValidateService : validateAcls Response
+
+EntityStorageService -> SchemaClient : getSchema
+participant Core.SchemaService as schema #99FF99
+SchemaClient -> schema: getSchema
+schema --> SchemaClient : EntityType JSon Schema
+SchemaClient --> EntityStorageService : EntityType JSon Schema
+
+EntityStorageService -> EntityStorageService : updateRelationships
+
+EntityStorageService -> MongoEntityClient : saveEntity
+database CosmosDB
+MongoEntityClient -> CosmosDB
+EntityStorageService -> StorageClient : saveRecord
+participant Core.StorageService as storage #99FF99
+StorageClient -> storage : saveRecord
+
+EntityStorageService --> EntityApi : createOrUpdateEntities Response
+EntityApi --> WebClient : Create Entity Response 
+@enduml

@@ -1,0 +1,33 @@
+{
+  "id": "osdu:master-data--Risk:1fdd2be0-b5ee-47e2-bf89-bddd71479345",
+  "kind": "osdu-test:well-delivery:risk:1.0.0",
+  "acl": {
+    "owners": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ],
+    "viewers": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-test-public-usa-dataset-x"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "Mitigations": [
+      {
+        "Name": "Unknown",
+        "Description": "• Test BOP every 14 days\n• Ensure minimum stock of\nweighting material and cement is\non the well site as per IPM-WCIWC-ST-004.\n• During well kill operation ensure\nconstant BHP > formation\npressure.\n• Verify supervisory staff well\ncontrol certifications as p",
+        "Status": "namespace:reference-data--RiskResponseStatus:Unknown:",
+        "Responsibles": []
+      }
+    ],
+    "Name": "Sulphurous Water Flow",
+    "Summary": "Fragile formation"
+  }
+}

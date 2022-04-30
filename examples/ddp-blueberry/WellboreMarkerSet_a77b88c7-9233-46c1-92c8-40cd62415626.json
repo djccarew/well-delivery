@@ -1,0 +1,156 @@
+{
+  "id": "osdu:work-product-component--WellboreMarkerSet:a77b88c7-9233-46c1-92c8-40cd62415626",
+  "kind": "osdu-test:well-delivery:wellboremarkerset:1.0.0",
+  "acl": {
+    "owners": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ],
+    "viewers": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-test-public-usa-dataset-x"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellboreID": "namespace:master-data--Wellbore:910a7be4-b288-4fb6-a9f8-86c37d07f056:1621376587950",
+    "Markers": [
+      {
+        "MarkerName": "Rustler",
+        "MDTopSample": null,
+        "TVDTopSample": 61.5696,
+        "Lithostratigraphic": {
+          "Name": "Other",
+          "Kind": "namespace:reference-data--Kind:formation:"
+        },
+        "FormationTopParameter": {
+          "depthUncertaintyUp": 3.048,
+          "depthUncertaintyDown": 3.048
+        }
+      },
+      {
+        "MarkerName": "Castile",
+        "MDTopSample": null,
+        "TVDTopSample": 243.84,
+        "Lithostratigraphic": {
+          "Name": "Salt & Anhydrites",
+          "Kind": "namespace:reference-data--Kind:formation:"
+        },
+        "FormationTopParameter": {
+          "depthUncertaintyUp": 6.096,
+          "depthUncertaintyDown": 6.096
+        }
+      },
+      {
+        "MarkerName": "Delaware Top",
+        "MDTopSample": null,
+        "TVDTopSample": 365.76,
+        "Lithostratigraphic": {
+          "Name": "Carbonates",
+          "Kind": "namespace:reference-data--Kind:formation:"
+        },
+        "FormationTopParameter": {
+          "depthUncertaintyUp": 4.572,
+          "depthUncertaintyDown": 4.572
+        }
+      },
+      {
+        "MarkerName": "Cherry Canon",
+        "MDTopSample": null,
+        "TVDTopSample": 721.4616000000001,
+        "Lithostratigraphic": {
+          "Name": "Granite & Basalt",
+          "Kind": "namespace:reference-data--Kind:formation:"
+        },
+        "FormationTopParameter": {
+          "depthUncertaintyUp": 6.7056000000000004,
+          "depthUncertaintyDown": 6.7056000000000004
+        }
+      },
+      {
+        "MarkerName": "Brushy canyon",
+        "MDTopSample": null,
+        "TVDTopSample": 1065.5808,
+        "Lithostratigraphic": {
+          "Name": "Sandstone",
+          "Kind": "namespace:reference-data--Kind:formation:"
+        },
+        "FormationTopParameter": {
+          "depthUncertaintyUp": 3.9624,
+          "depthUncertaintyDown": 3.9624
+        }
+      },
+      {
+        "MarkerName": "Bone spring",
+        "MDTopSample": null,
+        "TVDTopSample": 1171.6512,
+        "Lithostratigraphic": {
+          "Name": "Siltstone",
+          "Kind": "namespace:reference-data--Kind:formation:"
+        },
+        "FormationTopParameter": {
+          "depthUncertaintyUp": 4.2672,
+          "depthUncertaintyDown": 4.2672
+        }
+      },
+      {
+        "MarkerName": "Avalon a",
+        "MDTopSample": null,
+        "TVDTopSample": 1329.5376,
+        "Lithostratigraphic": {
+          "Name": "Shale",
+          "Kind": "namespace:reference-data--Kind:formation:"
+        },
+        "FormationTopParameter": {
+          "depthUncertaintyUp": 3.048,
+          "depthUncertaintyDown": 3.048
+        }
+      },
+      {
+        "MarkerName": "Bone Spring #rd Sand",
+        "MDTopSample": null,
+        "TVDTopSample": 1450.2384000000002,
+        "Lithostratigraphic": {
+          "Name": "Mudstone Clay",
+          "Kind": "namespace:reference-data--Kind:formation:"
+        },
+        "FormationTopParameter": {
+          "depthUncertaintyUp": 3.3528000000000002,
+          "depthUncertaintyDown": 3.3528000000000002
+        }
+      },
+      {
+        "MarkerName": "Wolfcamp",
+        "MDTopSample": null,
+        "TVDTopSample": 1549.9080000000001,
+        "Lithostratigraphic": {
+          "Name": "Unknown",
+          "Kind": "namespace:reference-data--Kind:formation:"
+        },
+        "FormationTopParameter": {
+          "depthUncertaintyUp": 6.7056000000000004,
+          "depthUncertaintyDown": 6.7056000000000004
+        }
+      }
+    ]
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "",
+      "propertyNames": [
+        "MDTopSample",
+        "TVDTopSample",
+        "depthUncertaintyUp",
+        "depthUncertaintyDown"
+      ]
+    }
+  ]
+}

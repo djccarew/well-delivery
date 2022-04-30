@@ -1,0 +1,31 @@
+{
+  "id": "osdu:work-product-component--TubularAssembly:f8e17cac-0a26-4ffb-b755-9d27bf0daa7b",
+  "kind": "osdu-test:well-delivery:tubularassembly:1.0.0",
+  "acl": {
+    "owners": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ],
+    "viewers": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-test-public-usa-dataset-x"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "TubularAssemblyTypeID": "namespace:reference-data--TubularAssemblyType:drilling:",
+    "ExtensionProperties": {
+      "NameWell": "Blueberry 0618",
+      "NameWellbore": "Blueberry 0618",
+      "Name": "Untitled BHA/Drillstring",
+      "ValveFloat": false,
+      "SourceNuclear": false
+    }
+  }
+}

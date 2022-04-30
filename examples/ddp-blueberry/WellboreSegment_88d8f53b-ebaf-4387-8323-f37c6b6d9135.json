@@ -1,0 +1,40 @@
+{
+  "id": "osdu:master-data--WellboreSegment:88d8f53b-ebaf-4387-8323-f37c6b6d9135",
+  "kind": "osdu-test:well-delivery:wellboresegment:1.0.0",
+  "acl": {
+    "owners": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ],
+    "viewers": [
+      "data.default.viewers@osdu-test.contoso.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-test-public-usa-dataset-x"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellboreID": "namespace:master-data--Wellbore:910a7be4-b288-4fb6-a9f8-86c37d07f056:1621376587950",
+    "Name": "0.445 m",
+    "Size": 0.4445,
+    "Comment": "no comment",
+    "MeasuredDepthTop": 0.0,
+    "MeasuredDepthBase": 0.0,
+    "WellboreSegmentType": "namespace:reference-data--WellboreSegmentType:Unkown:"
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "",
+      "propertyNames": [
+        "Size"
+      ]
+    }
+  ]
+}
